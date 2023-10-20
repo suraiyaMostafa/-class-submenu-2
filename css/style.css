@@ -1,0 +1,149 @@
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+ul li {
+   list-style: none;
+
+}
+
+
+
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+a:hover{ 
+    color: chocolate;
+}
+
+nav { 
+
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    background-color: black;
+}
+nav ul li{ 
+          display: inline-block;
+          height: 48px;
+          
+
+}
+nav ul li a{ 
+
+    padding: 15px 35px;
+    display: block;
+    color: #ccc;
+    
+    
+    
+}
+
+
+
+.main{
+    background-color:white;
+    
+
+
+}
+.main ul li{ 
+    display: inline-block;
+    position: relative;
+}
+.main ul li a{
+    color: black;
+}
+.main ul li a:hover{
+    color: orangered;
+}
+
+/* *SUBMENU  */
+.main ul li .submenu{ 
+background-color: #ccc;
+   
+    position: absolute;
+    width: 200px;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-top: 3px solid orangered;
+    
+     
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    
+}
+
+
+.main ul li:hover > .submenu{
+
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+
+}
+.main ul li .submenu li{ 
+    display: block;
+}
+
+.main ul li .submenu li a{ 
+    border-bottom: 1px solid #ccc;
+
+
+}
+ .main ul li .submenu li:hover> a{
+
+    background-color: orangered;
+    color: #ccc;
+  }
+
+.main ul li .submenu .submenu{ 
+
+    left: 100%;
+    top: 0;
+}
+
+.box{
+    background-color: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+
+
+width: 100%;
+height: 500px;
+margin-bottom:10px ;
+margin-top:30px ;
+padding: 20px;
+box-sizing: border-box;
+
+
+
+
+
+}
+
+    
+
+.btn{
+
+
+border: 2px solid navy;
+height: 42px;
+border-radius: 4px;
+line-height: 38px;
+font-size: 14px;
+padding: 0px 20px;
+
+}
+.btn:hover{ 
+    color: darkblue;
+    
+}
+
+
+
